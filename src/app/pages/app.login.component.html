@@ -1,0 +1,93 @@
+<p-toast></p-toast>
+
+<div class="loading-indicator" *ngIf="ProgressSpinnerDlg">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8"
+        animationDuration=".5s"></p-progressSpinner>
+</div>
+
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"
+    acceptButtonStyleClass="p-button-text p-button-success p-text-bold"
+    rejectButtonStyleClass="p-button-text p-button-danger p-text-bold">
+</p-confirmDialog>
+
+
+<div style="background: url('../../assets/images/login.png') no-repeat; background-size: cover"
+    class="px-4 py-8 md:px-6 lg:px-11 transparent-bg">
+    <div class="flex flex-wrap" *ngIf="isSignIn">
+        <div class="w-full lg:w-6 p-4 lg:p-7" style="background-color: rgba(255,255,255,.7)">
+            <img src="../../assets/images/logo.png" alt="Image" height="50" class="mb-2">
+            <div class="text-xl text-900 font-500 mb-3">Welcome to ReHomy</div>
+            <p class="text-600 line-height-3 mt-0 mb-4">Quis vel eros donec ac odio tempor orci dapibus. In hac
+                habitasse platea dictumst quisque.</p>
+            <ul class="list-none p-0 m-0">
+                <li class="flex align-items-start mb-4">
+                    <div>
+                        <span class="flex align-items-center justify-content-center bg-red"
+                            style="width:38px;height:38px;border-radius:10px">
+                            <i class="text-xl text-white pi pi-inbox"></i>
+                        </span>
+                    </div>
+                    <div class="ml-3">
+                        <span class="font-medium text-900">Unlimited Inbox</span>
+                        <p class="mt-2 mb-0 text-600 line-height-3">Tincidunt nunc pulvinar sapien et. Vitae purus
+                            faucibus ornare suspendisse sed nisi lacus sed viverra. </p>
+                    </div>
+                </li>
+                <li class="flex align-items-start" style="margin-bottom: 0.70rem;">
+                    <div>
+                        <span class="flex align-items-center justify-content-center bg-red"
+                            style="width:38px;height:38px;border-radius:10px">
+                            <i class="text-xl text-white pi pi-shield"></i>
+                        </span>
+                    </div>
+                    <div class="ml-3">
+                        <span class="font-medium text-900">Premium Security</span>
+                        <p class="mt-2 mb-0 text-600 line-height-3">Scelerisque purus semper eget duis at tellus at
+                            urna. Sed risus pretium quam vulputate.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-6 p-4 lg:p-7 transparent-bg surface-card">
+            <div class="text-900 text-2xl font-bold mb-4">Login</div>
+            <div [@slideInOut]>
+                <form [formGroup]="signinForm">
+                    <div class="block text-900 font-medium mb-2">
+                        <input id="email" type="text" pInputText class="w-full mb-4" formControlName="email"
+                            placeholder="Email">
+                    </div>
+
+                    <div class="block text-900 font-medium mb-2">
+                        <input id="password" type="password" pInputText class="w-full mb-4" formControlName="password"
+                            placeholder="Password">
+                    </div>
+
+                    <div class="flex align-items-center justify-content-between mb-4">
+                        <div class="flex align-items-center">
+                            <p-checkbox id="rememberme3" [binary]="true" styleClass="mr-2"
+                                (onChange)="rememberMe($event)">
+                            </p-checkbox>
+                            <label for="rememberme3">Remember me</label>
+                        </div>
+                        <a (click)="forgot()"
+                            class="font-medium no-underline ml-2 text-danger text-right cursor-pointer">Forgot
+                            password?</a>
+                    </div>
+                    <button pButton pRipple label="Login" class="w-full p-button-danger" (click)="signIn()"></button>
+                </form>
+            </div>
+
+            <!-- <p-divider align="center" styleClass="my-6">
+                <span class="text-600 font-normal text-sm">OR</span>
+            </p-divider>
+
+            <button pButton pRipple label="Sign In with GitHub" icon="pi pi-github"
+                class="w-full p-button-secondary"></button> -->
+
+            <div class="mt-3 text-center text-900">
+                Don't have an account? <a (click)="signUp()"
+                    class="font-medium no-underline ml-2 text-danger text-right cursor-pointer">Sign up</a>
+            </div>
+        </div>
+    </div>
+</div>

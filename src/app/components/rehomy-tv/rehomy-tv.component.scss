@@ -1,0 +1,18 @@
+.rehomy-library-item {
+    border: 1px solid var(--gray-300);
+}
+
+.rehomy-library-badge {
+    border-radius: 2px;
+    padding: .25em .5rem !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.rehomy-library-badge.status-rehomy {
+    background: #c2eff5;
+    color: #2196f3;
+    text-align: center;
+}

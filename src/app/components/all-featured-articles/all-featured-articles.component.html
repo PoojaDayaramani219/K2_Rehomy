@@ -1,0 +1,113 @@
+<div class="surface-overlay py-3 px-6 transparent-menubar relative shadow-2 flex align-items-center justify-content-between">
+    <a href=""><img src="../../../assets/images/logo.png" alt="Image" height="50"></a>
+    <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" hideOnOutsideClick="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 px-6 lg:px-0 z-2 shadow-2 lg:shadow-none">
+        <section></section>
+        <ul class="list-none p-0 m-0 flex lg:align-items-center text-900 select-none flex-column lg:flex-row cursor-pointer">
+            <li class="relative">
+                <a pRipple (click)="servicesDiv()" class="flex px-0 lg:px-3 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout"
+                    hideOnOutsideClick="true">
+                    <span class="text-sm">Design Gallery</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="corporateDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Modular Kitchen</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="resourceDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Bedroom</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="pricingDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Living Room</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Space Saving Furniture</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Home Office</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Customer Stories</span>
+                </a>
+            </li>
+        </ul>
+        <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
+            <button pButton pRipple type="button" label="Login" (click)="login()" class="p-button-text p-button-plain font-bold mr-2"></button>
+            <button pButton pRipple type="button" label="Register" (click)="register()" class="p-button-raised font-bold p-button-danger"></button>
+        </div>
+    </div>
+</div>
+
+<div class="px-8 flex surface-ground" style="padding-top: 7rem;">
+    <div id="app-sidebar" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
+        <div class="flex h-full">
+            <div class="flex flex-column surface-section p-4 overflow-y-auto flex-shrink-0 flex-grow-1 md:flex-grow-0" style="width:200px">
+                <div class="rehomy-browse-articles-navigation-header text-sm font-bold mb-3"> Stories from ReHomy </div>
+                <div *ngFor="let articles of articles_nav_filtered_list" class="mb-2">
+                    <a [href]="articles.url" class="text-sm articles-nav"> {{ articles.name }} </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-column relative flex-auto">
+        <div class="pl-3 py-0 flex flex-column flex-auto">
+            <div class=" border-round surface-border surface-section flex-auto">
+                <div>
+                    <img src="../../assets/images/featured_articles/{{articles_banner}}" alt="{{articles_banner}}" class="w-full">
+                    <div class="featured-articles-caption">
+                        <h1 class="banner-articles-title text-white"> Top 7 Types Of Glass That Allow In Light & Privacy </h1>
+                    </div>
+                    <div class="featured-articles-subcaption flex px-5 justify-content-between align-items-center ">
+                        <div>
+                            <span>
+                                Here are the top 7 types of glass that will help you design like a pro.
+                            </span>
+                        </div>
+                        <div>
+                            <button pButton pRipple type="button" label="Full Story" class="p-button-outlined p-button-white"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="surface-section pt-3 md:px-3 lg:px-3" *ngFor="let article of browse_articles_list">
+                    <div class="flex flex-wrap">
+                        <div class="w-full xl:w-6 flex align-items-center justify-content-center bg-indigo-50">
+                            <div class="relative w-full" style="padding-bottom:56.25%;height:0;">
+                                <img src="assets/images/featured_articles/{{article.image}}" height="auto" width="auto" [alt]="article.name" class="latest-design-image" />
+                            </div>
+                        </div>
+                        <div class="w-full xl:w-6 pl-3">
+                            <span class="text-primary font-bold mb-3 block"><a href="{{ article.theme_link }}"> {{article.theme_title }} <i class="fa-solid fa-angle-right"></i></a></span>
+                            <div class="font-bold text-900 text-xl mb-3"> <a href="{{article.theme_link}}"> {{article.name}} </a></div>
+                            <div class="author-name mb-2">
+                                <span>By {{article.author_name}}</span>
+                            </div>
+                            <div class="article-description text-sm mb-3">
+                                <span> {{article.description}} </span>
+                            </div>
+                            <div class="article-view-detail text-green-700">
+                                <a href="{{article.view_detail_link}}"> View Details </a>
+                            </div>
+                            <div class="comments-count align-items-center text-end mt-6">
+                                <i class="fa-solid fa-message fa-flip-horizontal text-bluegray-300"></i> <span class="ml-1 text-sm"> {{article.comments_count}} </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

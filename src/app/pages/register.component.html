@@ -1,0 +1,129 @@
+<p-toast></p-toast>
+
+<div class="loading-indicator" *ngIf="ProgressSpinnerDlg">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8"
+        animationDuration=".5s"></p-progressSpinner>
+</div>
+
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"
+    acceptButtonStyleClass="p-button-text p-button-success p-text-bold"
+    rejectButtonStyleClass="p-button-text p-button-danger p-text-bold">
+</p-confirmDialog>
+
+<!-- registration_details starts -->
+<div style="background: url('../../assets/images/login.png') no-repeat; background-size: cover"
+    class="px-4 py-8 md:px-6 lg:px-11 transparent-bg">
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-6 p-4 lg:p-7" style="background-color: rgba(255,255,255,.7)">
+            <img src="../../assets/images/logo.png" alt="Image" height="50" class="mb-2">
+            <div class="text-xl text-900 font-500 mb-3">Welcome to ReHomy</div>
+            <p class="text-600 line-height-3 mt-0 mb-4">Quis vel eros donec ac odio tempor orci dapibus. In hac
+                habitasse platea dictumst quisque.</p>
+            <ul class="list-none p-0 m-0">
+                <li class="flex align-items-start mb-4">
+                    <div>
+                        <span class="flex align-items-center justify-content-center bg-red"
+                            style="width:38px;height:38px;border-radius:10px">
+                            <i class="text-xl text-white pi pi-inbox"></i>
+                        </span>
+                    </div>
+                    <div class="ml-3">
+                        <span class="font-medium text-900">Unlimited Inbox</span>
+                        <p class="mt-2 mb-0 text-600 line-height-3">Tincidunt nunc pulvinar sapien et. Vitae purus
+                            faucibus ornare suspendisse sed nisi lacus sed viverra. </p>
+                    </div>
+                </li>
+                <li class="flex align-items-start" style="margin-bottom: 0.70rem;">
+                    <div>
+                        <span class="flex align-items-center justify-content-center bg-red"
+                            style="width:38px;height:38px;border-radius:10px">
+                            <i class="text-xl text-white pi pi-shield"></i>
+                        </span>
+                    </div>
+                    <div class="ml-3">
+                        <span class="font-medium text-900">Premium Security</span>
+                        <p class="mt-2 mb-0 text-600 line-height-3">Scelerisque purus semper eget duis at tellus at
+                            urna. Sed risus pretium quam vulputate.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-6 p-4 lg:p-6 transparent-bg surface-card">
+            <div class="text-900 text-2xl font-bold mb-4">Register</div>
+            <form [formGroup]="registerForm">
+                <div class="w-full p-fluid">
+                    <div class="business-form" *ngIf="personal_info_fields" [@slideInOut]>
+                        <div class="block text-900 font-medium mb-4">
+                            <input id="firstname" type="text" pInputText class="w-full" placeholder="First Name"
+                                formControlName="first_name">
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <input id="lastname" type="text" pInputText class="w-full" placeholder="Last Name"
+                                formControlName="last_name">
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <input id="email" type="email" pInputText formControlName="email" placeholder="Email"
+                                class="w-full">
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <input id="password" type="password" pInputText formControlName="password" class="w-full"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                placeholder="Password">
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <input id="confirmPassword" type="password" pInputText formControlName="confirm_password"
+                                class="w-full" placeholder="Confirm Password">
+                        </div>
+                        <div class="grid grid-nogutter justify-content-end">
+                            <p-button label="Next" icon="pi pi-angle-right" iconPos="right" class="p-button-danger"
+                                (click)="nextStep()">
+                            </p-button>
+                        </div>
+                    </div>
+
+                    <div class="personal-info-form" *ngIf="location_info_fields" [@slideInOut]>
+
+                        <div class="block text-900 font-medium mb-4">
+                            <input pInputText id="mobileNo" type="number" class="w-full" pattern=".{10}" required
+                                formControlName="mobile_no" minlength="10" maxlength="10" placeholder="Mobile No">
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <p-dropdown inputId="country" [autoDisplayFirst]="false" [options]="country_names_list"
+                                formControlName="country" class="w-full" placeholder="Country"
+                                optionLabel="country_name" (onChange)="onCountrySelect($event)">
+                            </p-dropdown>
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <p-dropdown inputId="state" [autoDisplayFirst]="false" [options]="state_names_list"
+                                formControlName="state" class="w-full" placeholder="State" optionLabel="state_name"
+                                (onChange)="onStateSelect($event)">
+                            </p-dropdown>
+                        </div>
+                        <div class="block text-900 font-medium mb-4">
+                            <p-dropdown inputId="city" [autoDisplayFirst]="false" [options]="city_names_list"
+                                class="w-full" formControlName="city" placeholder="City" optionLabel="city_name">
+                            </p-dropdown>
+                        </div>
+                        <div class="block text-900 font-medium mb-4" *ngIf="authorization_token_section">
+                            <input type="text" class="w-full" placeholder="Authorization Token" pInputText
+                                formControlName="authorization_token">
+                        </div>
+
+                        <div class="grid grid-nogutter justify-content-between">
+                            <p-button label="Back" (onClick)="prevStep()" icon="pi pi-angle-left" iconPos="left"
+                                class="p-button-danger">
+                            </p-button>
+                            <p-button label="Submit" iconPos="right" class="p-button-warning"
+                                (click)="register_request()" *ngIf="!authorization_token_section">
+                            </p-button>
+                            <p-button label="Register" (onClick)="Register()" class="p-button-danger" iconPos="right"
+                                *ngIf="authorization_token_section">
+                            </p-button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- registration_details ends -->

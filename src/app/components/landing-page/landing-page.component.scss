@@ -1,0 +1,68 @@
+.browse-room-item,
+.browse-by-style-item {
+    .browse-room-item-content,
+    .browse-by-style-content {
+        border: 1px solid var(--surface-d);
+        border-radius: 3px;
+        margin: .3rem;
+        text-align: center;
+        background-color: #fff;
+    }
+    .browse-room-image,
+    .browse-by-style-image {
+        width: 100%;
+    }
+}
+
+.latest-design-item,
+.rehomy-library-item {
+    .latest-design-item-content,
+    .rehomy-library-item-content {
+        border: 1px solid var(--surface-d);
+        border-radius: 3px;
+        margin: .3rem;
+        text-align: left;
+        background-color: #fff;
+    }
+    .latest-design-image,
+    .rehomy-library-video {
+        width: 100%;
+    }
+}
+
+.latest-design-badge,
+.rehomy-library-badge {
+    border-radius: 2px;
+    padding: .25em .5rem !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.latest-design-badge.status-popular,
+.rehomy-library-badge.status-rehomy {
+    background: #c2eff5;
+    color: #2196f3;
+    text-align: center;
+}
+
+.px-32 {
+    padding-left: 3.2rem !important;
+    padding-right: 3.2rem !important;
+}
+
+.f-articles:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--blue-800);
+}
+
+df-messenger {
+    --df-messenger-button-titlebar-color: var(--primary-color);
+    --df-messenger-chat-background-color: #fff;
+}
+
+:host ::ng-deep div.chat-wrapper {
+    height: 300px !important;
+}
