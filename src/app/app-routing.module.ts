@@ -51,9 +51,14 @@ import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
     imports: [
         RouterModule.forRoot([
             
+            // {
+            //     path: '',
+            //     component: LandingPageComponent,
+            //     pathMatch: 'full'
+            // },
             {
                 path: '',
-                component: LandingPageComponent,
+                component: TestingComponent,
                 pathMatch: 'full'
             },
             {

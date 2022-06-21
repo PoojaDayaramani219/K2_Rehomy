@@ -9,14 +9,113 @@ import { HttpService } from 'src/app/core/service/http/http.service';
 import { EndPoints, ApiMethod } from 'src/app/core/service/conts';
 import { S3UtilService } from 'src/app/core/service/s3-util.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import { PhotoService } from 'src/app/demo/service/photoservice';
+
+interface City {
+  name: string,
+  code: string
+}
+
 @Component({
   selector: 'app-testing',
   templateUrl: './testing.component.html',
   styleUrls: ['./testing.component.scss'],
   providers: [MessageService, ConfirmationService],
 })
+
 export class TestingComponent implements OnInit {
+  cities: City[];
+  modular_kitchen_list: Array<any> = [];
+
+  selectedCity: City;
+
+  images: any;
+  multiple_kitchen:any=[];
+
+  responsiveOptions:any[] = [
+      {
+          breakpoint: '1024px',
+          numVisible: 5
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 3
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1
+      }
+  ];
+
+  constructor(private photoService: PhotoService
+    
+  ) { }
+
   ngOnInit(): void {
-  
+    this.cities = [
+      {name: 'New York', code: 'NY'},
+      {name: 'Rome', code: 'RM'},
+      {name: 'London', code: 'LDN'},
+      {name: 'Istanbul', code: 'IST'},
+      {name: 'Paris', code: 'PRS'}
+    ];
+
+    this.modular_kitchen_list=[
+      {
+        "image": "kitchen1.jpg",
+        "name": "Martiz L-Shaped Henna Green Modular Kitchen",
+        "size":" 10' x 10' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Martiz L-Shaped Henna Green Modular Kitchen",
+        "size":" 7' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Martiz L-Shaped Henna Green Modular Kitchen",
+        "size":" 8' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Trooper Blue L-Shaped Modular Kitchen",
+        "size":" 10' x 10' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Martiz L-Shaped Henna Green Modular Kitchen",
+        "size":" 9' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Martiz L-Shaped Henna Green Modular Kitchen",
+        "size":" 7' "
+      },
+      {
+        "image": "kitchen1.jpg",
+        "name": "Purple Passion Straight Modular Kitchen",
+        "size":" 12' "
+      },
+    ]
+
+    this.multiple_kitchen = [
+      {
+        "image": "bathroom.png",
+        "name": "bathroom",
+      },
+      {
+        "image": "bedroom.png",
+        "name": "bedroom",
+      },
+      {
+        "image": "livingroom.png",
+        "name": "living room",
+      }
+    ];
+
+    this.photoService.getImages().then(images =>{ 
+      this.images = images
+    })
   }
+
   }

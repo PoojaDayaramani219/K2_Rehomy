@@ -1,0 +1,163 @@
+<div class="surface-overlay py-2 px-6 transparent-menubar shadow-2 flex align-items-center justify-content-between">
+    <a href=""><img src="../../../assets/images/logo.png" alt="Image" height="50"></a>
+    <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" hideOnOutsideClick="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 px-6 lg:px-0 z-2 shadow-2 lg:shadow-none">
+        <section></section>
+        <ul class="list-none p-0 m-0 flex lg:align-items-center text-900 select-none flex-column lg:flex-row cursor-pointer">
+            <li class="relative">
+                <a pRipple class="flex px-0 lg:px-3 py-3 align-items-center hover:text-primary font-medium transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout"
+                    hideOnOutsideClick="true">
+                    <span class="text-sm">Design Gallery</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Modular Kitchen</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Bedroom</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Living Room</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Space Saving Furniture</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Home Office</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Customer Stories</span>
+                </a>
+            </li> -->
+        </ul>
+        <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
+            <button pButton pRipple type="button" label="Get Free Estimate" class="p-button-raised font-bold p-button-danger"></button>
+        </div>
+    </div>
+</div>
+
+<div class="relative px-0 py-1">
+    <img src="../../../assets/images/kitchen_bg.webp" alt="Image" class="absolute top-0 left-0 w-auto h-100 block md:w-full">
+
+    <div class="text-left my-7 mx-0 p-7 mt-8 relative">
+        <div class="banner_text text-2xl font-bold p-text-capitalize px-0 py-0 text-white text-left">Modular Kitchen Designs</div>
+    </div>
+
+</div>
+
+<div class="surface-section px-4 py-1 md:px-6 lg:px-4 mt-0">
+    <div class="grid -mt-3 -ml-3 -mr-3 mt-0">
+        <div class="col-12 md:col-6 lg:col-4 mb-3 lg:mb-0" *ngFor="let kitchen of modular_kitchen_list">
+            <div class="p-2">
+                <div class="relative">
+                    <p-galleria [(value)]="multiple_kitchen" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+                        [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true"> 
+                        <ng-template pTemplate="item" let-item>
+                            <img class="image-round h-18rem" src="assets/images/browse_by_room/{{item.image}}" style="width: 100%;" />
+                        </ng-template>
+                    </p-galleria>
+
+                    <button type="text" pRipple class="p-link w-3rem h-3rem surface-0 hover:surface-200 border-circle shadow-2 inline-flex align-items-center justify-content-center absolute transition-colors transition-duration-300" style="top: 1rem; right: 1rem">
+                        <i class="pi pi-heart text-2xl text-primary"></i>
+                    </button>
+                </div>
+                <div class="flex align-items-center justify-content-between mt-2 mb-1">
+                    <span class="text-700 text-base font-semibold">{{kitchen.name}}</span>                  
+                </div>
+                <span class="text-sm text-400">Size | {{kitchen.size}}</span>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<p-divider></p-divider>
+
+<div class="surface-section px-4 py-1 md:px-6 lg:px-8">
+    <div class="flex align-items-start lg:align-items-center lg:justify-content-between pb-5 border-bottom-1 border-300 flex-column lg:flex-row">
+        <div class="flex align-items-center text-center mx-auto">
+                <img src="../../../assets/images/logo.png" alt="Image" height="50">
+                <p class="text-600 text-xm ml-0 mb-0 mt-2">Consequat nisl vel pretium lectus quam. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Integer quis auctor elit sed.</p>
+        </div>
+    </div>
+    <div class="py-3 border-bottom-1 border-300">
+        <div class="grid">
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Company</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">About Us</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">News</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Investor Relations</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Careers</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Media Kit</a></li>
+                </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Resources</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Get Started</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Learn</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Developer</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Courses</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Documentation</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">API Reference</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Status</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Papers</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Development Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Community</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Discord</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Events</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">FAQ</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Connect</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Newsletters</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Press</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Code of Conduct</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Security Guide</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Bug Bounty</a></li>
+                </ul>
+            </div>
+            <div class="col-12 sm:col-6 md:col-4 lg:col-2">
+                <span class="text-900 block font-bold line-height-3 mb-3">Legal</span>
+                <ul class="list-none p-0 m-0">
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Brand Policy</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Privacy Policy</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="flex lg:justify-content-between text-center md:justify-content-between">
+        <span>&copy; 2022 REHOMY</span>
+    </div> -->
+    <div class="text-center py-1">
+        <a class="mr-5 text-sm text-600 cursor-pointer">&copy; 2022 REHOMY</a>
+    </div>
+</div>
