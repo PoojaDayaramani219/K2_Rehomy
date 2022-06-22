@@ -1,59 +1,154 @@
-<div class="surface-overlay py-2 px-6 transparent-menubar shadow-2 flex align-items-center justify-content-between">
-    <a href=""><img src="../../../assets/images/logo.png" alt="Image" height="50"></a>
-    <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" hideOnOutsideClick="true">
+<p-dialog [(visible)]="visible3" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '60vw'}" 
+    [draggable]="false" [resizable]="false">
+    <div class="flex flex-wrap">
+        <div class="bg-blue-50 flex align-items-center justify-content-center py-3 px-3 w-full md:w-6 border-round">
+            <img src="../assets/images/browse_by_room/exterior.png" alt="Image" width="900" height="350">
+        </div>
+        <p class="text-700 line-height-3 m-0 p-5 w-full md:w-6">
+            Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer. Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
+            Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer. Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
+            Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer. Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
+        </p>
+    </div>
+    <ng-template pTemplate="footer">
+    </ng-template>
+</p-dialog>
+
+
+<div class="surface-overlay py-4 px-6 transparent-menubar shadow-2 flex align-items-center justify-content-between">
+    <img src="../../../assets/images/logo.png" alt="Image" height="50">
+    <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
         <i class="pi pi-bars text-4xl"></i>
     </a>
-    <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 px-6 lg:px-0 z-2 shadow-2 lg:shadow-none">
+    <div>
         <section></section>
         <ul class="list-none p-0 m-0 flex lg:align-items-center text-900 select-none flex-column lg:flex-row cursor-pointer">
             <li class="relative">
-                <a pRipple class="flex px-0 lg:px-3 py-3 align-items-center hover:text-primary font-medium transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout"
-                    hideOnOutsideClick="true">
-                    <span class="text-sm">Design Gallery</span>
+                <a pRipple class="flex px-0 lg:px-2 py-3 align-items-center hover:text-primary font-medium transition-colors transition-duration-150" 
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <span class="text-sm">What We Do</span>
+                    <i class="pi pi-angle-down ml-auto lg:ml-1 text-base"></i>
+                </a>
+                <ul class="list-none p-0 m-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-overlay hidden origin-top w-full lg:w-20rem">
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>Home renovations and remodelling</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>A better renovation experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>Why we're the best option</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a pRipple class="flex px-0 lg:px-2 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Projects</span>
                 </a>
             </li>
             <li>
-                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Modular Kitchen</span>
+                <a pRipple class="flex px-0 lg:px-2 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Testimonials</span>
                 </a>
             </li>
             <li>
-                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Bedroom</span>
+                <a pRipple class="flex px-0 lg:px-2 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">Locations</span>
                 </a>
             </li>
             <li>
-                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Living Room</span>
+                <a pRipple class="flex px-0 lg:px-2 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
+                    <span class="text-sm">People</span>
                 </a>
             </li>
-            <li>
-                <a pRipple class="flex px-0 lg:px-3 py-3 hover:text-primary font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Space Saving Furniture</span>
+            <li class="relative">
+                <a pRipple class="flex px-0 lg:px-2 py-3 align-items-center hover:text-primary font-medium transition-colors transition-duration-150" 
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <span class="text-sm">Get In Touch</span>
+                    <i class="pi pi-angle-down ml-auto lg:ml-1"></i>
+                </a>
+                <ul class="list-none p-0 m-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem">
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>Renovaton Enquiry</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>Business Opportunities</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center hover:text-primary transition-colors transition-duration-150">
+                            <span>Career Opportunities</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="h-full pl-6">
+                <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-2 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent transition-colors transition-duration-150">
+                    <span class="mr-2 lg:mr-0 text-green-300 text-sm">0800 098 84 17</span>
+                    <span class="font-medium inline lg:hidden">Number</span>
                 </a>
             </li>
-            <!-- <li>
-                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Home Office</span>
+            <li class="h-full">
+                <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-2 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent transition-colors transition-duration-150">
+                    <span class="pi pi-search mr-2 lg:mr-0 text-sm toggle-search"></span>
+                    <span class="font-medium inline lg:hidden">Search</span>
                 </a>
             </li>
-            <li>
-                <a pRipple (click)="contactDiv()" class="flex px-0 lg:px-3 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
-                    <span class="text-sm">Customer Stories</span>
+            <!-- <li class="h-full relative">
+                <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-2 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent transition-colors transition-duration-150"
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="lg:mr-0" style="width: 28px; height: 28px"/>
+                    <i class="pi pi-angle-down ml-auto lg:ml-1"></i>
                 </a>
+                <ul class="list-none p-0 m-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem">
+                        <li>
+                            <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 hover:text-primary transition-colors transition-duration-150 p-3">
+                                <span class="mr-2"><img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 28px; height: 28px"/></span>
+                                <span class="font-medium">Australia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 hover:text-primary transition-colors transition-duration-150 p-3">
+                                <span class="mr-2"><img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 28px; height: 28px"/></span>
+                                <span class="font-medium">New Zealand</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 hover:text-primary transition-colors transition-duration-150 p-3">
+                                <span class="mr-2"><img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 28px; height: 28px"/></span>
+                                <span class="font-medium">United Kingdom</span>
+                            </a>
+                        </li>
+                </ul>                
             </li> -->
+               
+            <li class="h-full relative pl-3">
+                <button pButton pRipple type="button" label="Login" class="p-button-raised font-bold p-button-danger mr-2"></button>
+            </li>
+            
+                
         </ul>
-        <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
-            <button pButton pRipple type="button" label="Get Free Estimate" class="p-button-raised font-bold p-button-danger"></button>
-        </div>
+       
     </div>
+   
 </div>
 
-<div class="relative px-0 py-1">
-    <img src="../../../assets/images/kitchen_bg.webp" alt="Image" class="absolute top-0 left-0 w-auto h-100 block md:w-full">
+<div class="relative px-6 pb-8 pt-3 overflow-hidden">
+    <img src="../../../assets/images/kitchen_bg.webp" alt="Image"
+        class="absolute mt-8 left-0 w-auto h-100 block md:w-full">
 
-    <div class="text-left my-7 mx-0 p-7 mt-8 relative">
-        <div class="banner_text text-2xl font-bold p-text-capitalize px-0 py-0 text-white text-left">Modular Kitchen Designs</div>
+    <div class="text-left my-4 mx-0 p-7 mt-4 relative">
+        <div class="banner_text text-2xl font-bold p-text-capitalize px-0 pt-4 text-white text-left">Modular Kitchen
+            Designs</div>
     </div>
 
 </div>
@@ -63,35 +158,41 @@
         <div class="col-12 md:col-6 lg:col-4 mb-3 lg:mb-0" *ngFor="let kitchen of modular_kitchen_list">
             <div class="p-2">
                 <div class="relative">
-                    <p-galleria [(value)]="multiple_kitchen" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
-                        [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true"> 
+                    <p-galleria [(value)]="multiple_kitchen" [responsiveOptions]="responsiveOptions"
+                        [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [showThumbnails]="false"
+                        [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true">
                         <ng-template pTemplate="item" let-item>
-                            <img class="image-round h-18rem" src="assets/images/browse_by_room/{{item.image}}" style="width: 100%;" />
+                            <img class="image-round h-18rem" src="assets/images/browse_by_room/{{item.image}}"
+                                style="width: 100%;" />
                         </ng-template>
                     </p-galleria>
 
-                    <button type="text" pRipple class="p-link w-3rem h-3rem surface-0 hover:surface-200 border-circle shadow-2 inline-flex align-items-center justify-content-center absolute transition-colors transition-duration-300" style="top: 1rem; right: 1rem">
+                    <button type="text" pRipple
+                        class="p-link w-3rem h-3rem surface-0 hover:surface-200 border-circle shadow-2 inline-flex align-items-center justify-content-center absolute transition-colors transition-duration-300"
+                        style="top: 1rem; right: 1rem">
                         <i class="pi pi-heart text-2xl text-primary"></i>
                     </button>
                 </div>
                 <div class="flex align-items-center justify-content-between mt-2 mb-1">
-                    <span class="text-700 text-base font-semibold">{{kitchen.name}}</span>                  
+                    <span class="text-700 text-base font-semibold">{{kitchen.name}}</span>
                 </div>
                 <span class="text-sm text-400">Size | {{kitchen.size}}</span>
-                
+
             </div>
         </div>
-        
+
     </div>
 </div>
 
 <p-divider></p-divider>
 
 <div class="surface-section px-4 py-1 md:px-6 lg:px-8">
-    <div class="flex align-items-start lg:align-items-center lg:justify-content-between pb-5 border-bottom-1 border-300 flex-column lg:flex-row">
+    <div
+        class="flex align-items-start lg:align-items-center lg:justify-content-between pb-5 flex-column lg:flex-row">
         <div class="flex align-items-center text-center mx-auto">
-                <img src="../../../assets/images/logo.png" alt="Image" height="50">
-                <p class="text-600 text-xm ml-0 mb-0 mt-2">Consequat nisl vel pretium lectus quam. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Integer quis auctor elit sed.</p>
+            <img src="../../../assets/images/logo.png" alt="Image" height="50">
+            <p class="text-600 text-xm ml-0 mb-0 mt-2 pl-3">Consequat nisl vel pretium lectus quam. Scelerisque eu ultrices
+                vitae auctor eu augue ut lectus arcu. Integer quis auctor elit sed.</p>
         </div>
     </div>
     <div class="py-3 border-bottom-1 border-300">
@@ -154,9 +255,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="flex lg:justify-content-between text-center md:justify-content-between">
-        <span>&copy; 2022 REHOMY</span>
-    </div> -->
     <div class="text-center py-1">
         <a class="mr-5 text-sm text-600 cursor-pointer">&copy; 2022 REHOMY</a>
     </div>

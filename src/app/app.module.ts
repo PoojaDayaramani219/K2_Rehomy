@@ -158,6 +158,7 @@ import { RegisterComponent } from './pages/register.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AllFeaturedArticlesComponent } from './components/all-featured-articles/all-featured-articles.component';
 import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
+import { StyleClassModule } from 'primeng/styleclass';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -255,7 +256,8 @@ FullCalendarModule.registerPlugins([
         TreeTableModule,
         VirtualScrollerModule,
         AppCodeModule,
-        CoreModule
+        CoreModule,
+        StyleClassModule
     ],
     declarations: [
         AppComponent,
