@@ -89,6 +89,7 @@ export class TestingComponent implements OnInit {
       }
     ];
 
+
     this.photoService.getImages().then(images =>{ 
       this.images = images
     });

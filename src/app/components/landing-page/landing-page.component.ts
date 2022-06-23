@@ -2,6 +2,7 @@ import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -13,7 +14,7 @@ export class LandingPageComponent implements OnInit {
   latest_stories: Array<any> = [];
   style_list: Array<any> = [];
   rehomy_video_library: Array<any> = [];
-  responsiveOptions;
+  responsiveOptions: Array<any> =[];
 
   constructor(
     private scroller: ViewportScroller,
@@ -21,6 +22,8 @@ export class LandingPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
+
     this.responsiveOptions = [
       {
           breakpoint: '1024px',
@@ -287,6 +290,8 @@ export class LandingPageComponent implements OnInit {
     }
 
   ];
+
+  
   }
 
   servicesDiv() {

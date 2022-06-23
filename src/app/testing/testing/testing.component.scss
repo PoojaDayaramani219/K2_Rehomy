@@ -74,12 +74,17 @@ df-messenger {
 
 .banner_text
 {
-    margin-top: 12rem;
+    position: relative;
+    top: 8rem;
 }
 
 :host ::ng-deep .p-galleria.p-galleria-indicator-onitem .p-galleria-indicators
 {
     background: none;
+}
+
+:host ::ng-deep .p-galleria.p-galleria-indicator-onitem .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+    background: var(--primary-color);
 }
 
 :host ::ng-deep .p-button {

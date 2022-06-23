@@ -27264,6 +27264,10 @@ pre[class*=language-] code .token.string {
     color: var(--primary-color);
 }
 
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
 .font-yellow {
     color: var(--google-color--yellow);
 }
