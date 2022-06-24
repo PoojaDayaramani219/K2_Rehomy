@@ -51,16 +51,16 @@ import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
     imports: [
         RouterModule.forRoot([
             
-            // {
-            //     path: '',
-            //     component: LandingPageComponent,
-            //     pathMatch: 'full'
-            // },
             {
                 path: '',
-                component: TestingComponent,
+                component: LandingPageComponent,
                 pathMatch: 'full'
             },
+            // {
+            //     path: '',
+            //     component: TestingComponent,
+            //     pathMatch: 'full'
+            // },
             {
                 path: '', component: AppMainComponent, canActivate: [AuthGuard],
                 children: [

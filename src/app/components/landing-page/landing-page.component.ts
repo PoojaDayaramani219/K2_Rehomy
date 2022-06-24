@@ -1,6 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {MessageService} from 'primeng/api';
+import { PhotoService } from 'src/app/demo/service/photoservice';
 
 
 @Component({
@@ -15,15 +17,77 @@ export class LandingPageComponent implements OnInit {
   style_list: Array<any> = [];
   rehomy_video_library: Array<any> = [];
   responsiveOptions: Array<any> =[];
+  images: any;
+  activeIndex: number = 0;
+  items: { label: string; command: (event: any) => void; }[];
 
   constructor(
     private scroller: ViewportScroller,
-    private router: Router
+    private router: Router,
+    private photoService: PhotoService,
+    private messageService: MessageService
   ) { }
 
   ngOnInit(): void {
-
-
+ 
+    this.items = [
+      {
+        label: "Initial Consultation",
+        command: (event: any) => {
+          this.activeIndex = 0;
+          this.messageService.add({
+            severity: "info",
+            summary: "Engagement Matrix",
+            detail: event.item.label
+          });
+        }
+      },
+      {
+        label: "Concept and feasibilty",
+        command: (event: any) => {
+          this.activeIndex = 1;
+          this.messageService.add({
+            severity: "info",
+            summary: "Seat Selection",
+            detail: event.item.label
+          });
+        }
+      },
+      {
+        label: "Working drawings and costing",
+        command: (event: any) => {
+          this.activeIndex = 2;
+          this.messageService.add({
+            severity: "info",
+            summary: "Pay with CC",
+            detail: event.item.label
+          });
+        }
+      },
+      {
+        label: "Construction stage",
+        command: (event: any) => {
+          this.activeIndex = 3;
+          this.messageService.add({
+            severity: "info",
+            summary: "Last Step",
+            detail: event.item.label
+          });
+        }
+      },
+      {
+        label: "Your finished home",
+        command: (event: any) => {
+          this.activeIndex = 4;
+          this.messageService.add({
+            severity: "info",
+            summary: "Last Step",
+            detail: event.item.label
+          });
+        }
+      }
+    ];
+    
     this.responsiveOptions = [
       {
           breakpoint: '1024px',
@@ -291,6 +355,23 @@ export class LandingPageComponent implements OnInit {
 
   ];
 
+  this.images=[
+      {
+          "title": "Title 1"
+      },
+      {
+          "title": "Title 2"
+      },
+      {
+          "title": "Title 3"
+      },
+      {
+          "title": "Title 4"
+      },
+      {
+          "title": "Title 5"
+      }
+  ]
   
   }
 

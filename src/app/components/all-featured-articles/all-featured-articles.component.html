@@ -50,7 +50,7 @@
     </div>
 </div>
 
-<div class="px-8 flex surface-ground" style="padding-top: 7rem;">
+<div class="px-8 py-4 flex surface-ground">
     <div id="app-sidebar" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
         <div class="flex h-full">
             <div class="flex flex-column surface-section p-4 overflow-y-auto flex-shrink-0 flex-grow-1 md:flex-grow-0" style="width:200px">
@@ -83,9 +83,9 @@
 
                 <div class="surface-section pt-3 md:px-3 lg:px-3" *ngFor="let article of browse_articles_list">
                     <div class="flex flex-wrap">
-                        <div class="w-full xl:w-6 flex align-items-center justify-content-center bg-indigo-50">
-                            <div class="relative w-full" style="padding-bottom:56.25%;height:0;">
-                                <img src="assets/images/featured_articles/{{article.image}}" height="auto" width="auto" [alt]="article.name" class="latest-design-image" />
+                        <div class="w-full h-full xl:w-6 flex align-items-center justify-content-center bg-indigo-50">
+                            <div class="relative w-full">
+                                <img src="assets/images/featured_articles/{{article.image}}" height="300" width="500" [alt]="article.name" class="w-full flex latest-design-image" />
                             </div>
                         </div>
                         <div class="w-full xl:w-6 pl-3">
@@ -100,7 +100,7 @@
                             <div class="article-view-detail text-green-700">
                                 <a href="{{article.view_detail_link}}"> View Details </a>
                             </div>
-                            <div class="comments-count align-items-center text-end mt-6">
+                            <div class="comments-count align-items-center text-end mt-2">
                                 <i class="fa-solid fa-message fa-flip-horizontal text-bluegray-300"></i> <span class="ml-1 text-sm"> {{article.comments_count}} </span>
                             </div>
                         </div>

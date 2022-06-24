@@ -66,3 +66,16 @@ df-messenger {
 :host ::ng-deep div.chat-wrapper {
     height: 300px !important;
 }
+
+:host ::ng-deep .p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+    background: var(--primary-color);
+}
+
+:host ::ng-deep .p-galleria .p-galleria-indicators .p-galleria-indicator button {
+    width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
+    margin-right: 4.5rem;
+}

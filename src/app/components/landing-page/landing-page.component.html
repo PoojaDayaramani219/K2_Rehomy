@@ -66,9 +66,9 @@
     <img src="../../../assets/images/cust-bg.png" alt="Image" class="absolute top-11 left-0 w-auto h-90 block md:w-full">
 
     <div class="text-center my-8 mx-20 p-7 transparent-bg border-20 relative">
-        <div class="text-6xl font-bold p-text-capitalize mb-1">get hassle-free</div>
-        <div class="text-6xl text-danger p-text-capitalize font-bold mb-1"> renovation solutions </div>
-        <div class="text-6xl font-bold p-text-capitalize mb-1">
+        <div class="text-5xl font-bold p-text-capitalize mb-1">get hassle-free</div>
+        <div class="text-5xl text-primary p-text-capitalize font-bold mb-1"> renovation solutions </div>
+        <div class="text-5xl font-bold p-text-capitalize mb-1">
             from our experts
         </div>
         <p class="mt-0 mb-4 line-height-3 text-center mx-auto" style="max-width:500px"></p>
@@ -81,13 +81,13 @@
     <div class="text-center">
         <div class="mb-3 font-bold text-4xl">
             <span class="text-900">One Product, </span>
-            <span class="text-danger">Many Solutions</span>
+            <span class="text-primary">Many Solutions</span>
         </div>
         <div class="text-700 text-sm mb-6">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
         <div class="grid">
             <div class="col-12 md:col-4 mb-4 px-5">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-utensils text-4xl text-danger"></i>
+                    <i class="fa-solid fa-utensils text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Kitchen</div>
                 <span class="text-700 text-sm line-height-3">Duis aute irure dolor in reprehenderit in voluptate velit
@@ -95,7 +95,7 @@
             </div>
             <div class="col-12 md:col-4 mb-4 px-5">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-bed text-4xl text-danger"></i>
+                    <i class="fa-solid fa-bed text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Bedroom</div>
                 <span class="text-700 text-sm line-height-3">Risus nec feugiat in fermentum posuere urna nec. Posuere
@@ -103,7 +103,7 @@
             </div>
             <div class="col-12 md:col-4 mb-4 px-5">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-house-chimney-user text-4xl text-danger"></i>
+                    <i class="fa-solid fa-house-chimney-user text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Renovation</div>
                 <span class="text-700 text-sm line-height-3">Ornare suspendisse sed nisi lacus sed viverra tellus. Neque
@@ -111,7 +111,7 @@
             </div>
             <div class="col-12 md:col-4 mb-4 px-5">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-sink text-4xl text-danger"></i>
+                    <i class="fa-solid fa-sink text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Plumbing</div>
                 <span class="text-700 text-sm line-height-3">Fermentum et sollicitudin ac orci phasellus egestas tellus
@@ -119,7 +119,7 @@
             </div>
             <div class="col-12 md:col-4 mb-4 px-5">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-paint-roller text-4xl text-danger"></i>
+                    <i class="fa-solid fa-paint-roller text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Painting</div>
                 <span class="text-700 text-sm line-height-3">Nec tincidunt praesent semper feugiat. Sed adipiscing diam
@@ -127,7 +127,7 @@
             </div>
             <div class="col-12 md:col-4 md:mb-4 mb-0 px-3">
                 <span class="p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px">
-                    <i class="fa-solid fa-hammer text-4xl text-danger"></i>
+                    <i class="fa-solid fa-hammer text-4xl text-primary"></i>
                 </span>
                 <div class="text-900 mb-3 font-medium">Construction</div>
                 <span class="text-700 text-sm line-height-3">Mattis rhoncus urna neque viverra justo nec ultrices. Id
@@ -265,8 +265,8 @@
 <div class="surface-section px-4 pb-8 pt-0 md:px-6 lg:px-8" id="resources_section">
     <div class="flex flex-wrap align-items-center justify-content-between">
         <div class="w-full lg:w-6 pr-0 lg:pr-4">
-            <div class="font-bold text-900 text-4xl mb-3">Our Clients</div>
-            <p class="text-700 m-0 text-xl">Millions of individuals, corporations, startups and institutes work with us.</p>
+            <div class="font-bold text-900 text-4xl mb-3">Trusted By</div>
+            <p class="text-700 m-0 text-xl">We provide many of the planet earth's most powerful companies with extraordinary infrastructal capabilities.</p>
         </div>
         <div class="w-full lg:w-6 mt-4 lg:mt-0">
             <div class="grid grid-nogutter">
@@ -417,5 +417,66 @@
         </div>
     </div>
 </div>
+
+<!-- <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [circular]="true"
+        [autoPlay]="true" [transitionInterval]="2000"> 
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.previewImageSrc" style="width: 100%; display: block;"/>
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.thumbnailImageSrc" style="display: block;"/>
+            </div>
+        </ng-template>
+</p-galleria> -->
+
+<div class="flex">
+    <div class="flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
+        <img src="../../assets/images/kitchen/k1.png" alt="Image" height="300" width="300">
+    </div>
+    <div class="flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
+        <p-galleria [(value)]="images" [(activeIndex)]="activeIndex" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+                [showThumbnails]="false" [showIndicators]="true" [autoPlay]="true" [circular]="true"> 
+                <!-- <ng-template pTemplate="thumbnail" let-item *ngFor="let i=index;">
+                    <div class="grid grid-nogutter justify-content-center" *ngIf="activeIndex === i">
+                        {{item.title}}
+                    </div>
+                </ng-template> -->
+            </p-galleria>
+    </div>
+
+    <div>
+        <ng-container *ngIf="activeIndex === 0">
+            <div class="w-full lg:w-8">
+                <span class="text-primary font-bold mb-3 text-xl text-blue-600">Initial Consultation</span>
+                <!-- <div class="font-sm text-900 text-xl mb-3"> ABD</div> -->
+            </div>
+        </ng-container>
+        <ng-container *ngIf="activeIndex === 1"> 
+            <div class="w-full lg:w-8">
+                <span class="text-primary font-bold mb-3 text-xl">Concept & Feasibilty</span>
+                <!-- <div class="font-sm text-900 text-xl mb-3"> PQR</div> -->
+            </div> </ng-container>
+        <ng-container *ngIf="activeIndex === 2"> 
+            <div class="w-full lg:w-8">
+                <span class="text-primary font-bold mb-3 text-xl">Working Drawings & Costing</span>
+                <!-- <div class="font-bold text-900 text-xl mb-3"> </div> -->
+            </div>
+        </ng-container>
+        <ng-container *ngIf="activeIndex === 3">
+            <div class="w-full lg:w-8">
+                <span class="text-primary font-bold mb-3 text-xl">Construction Stage</span>
+                <!-- <div class="font-bold text-900 text-xl mb-3"> </div> -->
+            </div> 
+        </ng-container>
+        <ng-container *ngIf="activeIndex === 4">
+            <div class="w-full lg:w-8">
+                <span class="text-primary font-bold mb-3 text-xl">Your Finished Stage</span>
+                <!-- <div class="font-bold text-900 text-xl mb-3"> </div> -->
+            </div> 
+        </ng-container>
+    </div>
+</div>
+
 
 <df-messenger intent="WELCOME" chat-icon="https://cdn-icons-png.flaticon.com/512/6540/6540769.png" chat-title="customer-chatbot" agent-id="ea747d4a-67f9-488c-82aa-2f0fb10ccfdf" language-code="en"></df-messenger>

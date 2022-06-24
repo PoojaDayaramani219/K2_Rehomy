@@ -159,6 +159,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { AllFeaturedArticlesComponent } from './components/all-featured-articles/all-featured-articles.component';
 import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
 import { StyleClassModule } from 'primeng/styleclass';
+import { MessageService } from 'primeng/api';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -319,7 +320,7 @@ FullCalendarModule.registerPlugins([
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService, BreadcrumbService
+        PhotoService, ProductService, MenuService, BreadcrumbService, MessageService
     ],
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
