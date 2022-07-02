@@ -357,22 +357,31 @@ export class LandingPageComponent implements OnInit {
 
   this.images=[
       {
-          "title": "Title 1"
+          "icon":"fa-circle-1",
+          "title": "Initial consultation",
+          "subtitle":"The initial interior design consultation is when you meet with potential clients, learn more about their project needs and showcase your value as a home."
       },
       {
-          "title": "Title 2"
+          "icon":"fa-circle-2",
+          "title": "Concept & feasibility",
+          "subtitle":"Rehomy provide a full range of design expertise including early stage design work at project inception. Often required in a quick turnaround time."
       },
       {
-          "title": "Title 3"
+          "icon":"fa-circle-3",
+          "title": "Working drawings & costing",
+          "subtitle":"Working drawings provide dimensioned, graphical information that can be used; by a contractor to construct the works, or by suppliers to our clients."
       },
       {
-          "title": "Title 4"
+          "icon":"fa-circle-4",
+          "title": "Construction stage",
+          "subtitle":"The Process of Building a house · 1. The Base Stage · 2. The Frame Stage · 3. The Lock-up/Enclosed Stage · 4. The Fixing and Fit-Off Stages · 5. Practical Completion."
       },
       {
-          "title": "Title 5"
+          "icon":"fa-circle-5",
+          "title": "Your finished home",
+          "subtitle":"It's worth taking your time to perfect the design and ensure the finished property will meet your needs.."
       }
   ]
-  
   }
 
   servicesDiv() {

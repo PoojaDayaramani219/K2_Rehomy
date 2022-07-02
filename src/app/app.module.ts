@@ -160,6 +160,7 @@ import { AllFeaturedArticlesComponent } from './components/all-featured-articles
 import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
 import { StyleClassModule } from 'primeng/styleclass';
 import { MessageService } from 'primeng/api';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -315,7 +316,8 @@ FullCalendarModule.registerPlugins([
         RegisterComponent,
         LandingPageComponent,
         AllFeaturedArticlesComponent,
-        RehomyTvComponent
+        RehomyTvComponent,
+        GalleryComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

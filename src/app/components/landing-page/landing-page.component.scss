@@ -79,3 +79,421 @@ df-messenger {
 :host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
     margin-right: 4.5rem;
 }
+
+.circled-number {
+    color: #666;
+    border: 2px solid #666;
+    border-radius: 50%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em; 
+    height: 2em;
+  }
+
+@media screen and (max-width: 576px)
+{
+    .p-carousel h2
+    {
+         font-size: 20px !important;
+    }
+
+    .text-right
+    {
+        text-align: center !important;
+    }
+
+   .mx-20 {
+        margin-left: -2rem!important;
+        margin-right: -2rem!important;
+    }
+
+    .text-5xl {
+        font-size: 1.3rem !important;
+    }
+
+    .banner-img {
+        width: 100% !important;
+    }
+
+    #resources_section
+    {
+        text-align: center;
+    }
+
+    .h-90
+    {
+        height: 80% !important;
+    }
+
+    .py-8 {
+        padding-top: 1rem !important;
+    }
+
+    .banner-button
+    {
+        font-size: 10px;
+    }
+
+    .text-sm {
+        font-size: 1.4rem!important;
+    }
+
+    .fa-solid
+    {
+        font-size: 5rem !important;
+    }
+
+    .font-medium
+    {
+        font-size: 2rem !important;
+    }
+
+    .get-started
+    {
+        font-size: 1.6rem !important;
+    }
+
+    .text-700
+    {
+        font-size: 1.5rem !important;
+    }
+
+    .text-600
+    {
+        font-size: 1.5rem !important;
+    }
+
+    .text-bold
+    {
+        font-size: 2rem !important;
+    }
+
+    .p-carousel .p-carousel-indicators {
+        margin-bottom: 3rem !important;
+    }
+
+    .footer-logo
+    {
+        width: 60%;
+        height: 20%;
+    }
+
+    .banner-button
+    {
+        font-size: 1.2rem !important;
+    }
+
+    .pi-envelope .submit-button
+    {
+        font-size: 1.5rem;
+    }
+
+    :host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
+        margin-right: 2.2rem !important;
+    }
+
+    // :host ::ng-deep .p-galleria-item-wrapper {
+    //     position: relative !important;
+    //     top: -4rem !important;
+    //     left: -8rem !important;
+    // }
+
+    .kitchen-img
+    {
+        display: none !important;
+    }
+
+    .take-step
+    {
+        margin-top:2rem;
+    }
+
+    // .step-right-section
+    // {
+    //     padding-left: 2.5rem !important;
+    // }
+
+    .transparent-menubar {
+        position: absolute !important;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .banner-img {
+        width: 100% !important;
+    }
+
+    .text-5xl {
+        font-size: 1.1rem !important;
+    }
+
+    .p-carousel h2{
+        font-size: 20px !important;
+    }
+
+    .mx-20 {
+        margin-left: -1rem!important;
+        margin-right: -1rem!important;
+    }
+
+    .banner-button
+    {
+        font-size: 1.2rem !important;
+    }
+
+    .text-sm {
+        font-size: 1.4rem!important;
+    }
+
+    .text-bold
+    {
+        font-size: 2rem !important;
+    }
+
+    .p-carousel .p-carousel-indicators {
+        margin-bottom: 3rem !important;
+    }
+
+    .footer-logo
+    {
+        width: 60%;
+        height: 20%;
+    }
+
+    .pi-envelope .submit-button
+    {
+        font-size: 1.5rem;
+    }
+
+    :host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
+        margin-right: 2.2rem !important;
+    }
+
+    // :host ::ng-deep .p-galleria-item-wrapper {
+    //     position: relative !important;
+    //     top: -4rem !important;
+    //     left: -8rem !important;
+    // }
+
+    .kitchen-img
+    {
+        display: none !important;
+    }
+
+    .take-step
+    {
+        margin-top:2rem;
+    }
+
+    .transparent-menubar {
+        position: absolute !important;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+
+    .banner-img {
+        width: 100% !important;
+    }
+
+    .p-carousel h2{
+        font-size: 20px !important;
+    }
+
+    .mx-20 {
+        // margin-left: 5rem!important;
+        // margin-right: 5rem!important;
+        margin-left: -1rem!important;
+        margin-right: -1rem!important;
+    }
+
+    .text-down
+    {
+        font-size: 2.3rem !important;
+    }
+
+    .banner-button
+    {
+        font-size: 1rem !important;
+    }
+
+    .text-sm {
+        font-size: 1.2rem!important;
+    }
+
+    .text-bold
+    {
+        font-size: 1.4rem !important;
+    }
+
+    .p-carousel .p-carousel-indicators {
+        margin-bottom: 3rem !important;
+    }
+
+    .footer-logo
+    {
+        width: 60%;
+        height: 20%;
+    }
+
+    .pi-envelope .submit-button
+    {
+        font-size: 1.5rem;
+    }
+
+    :host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
+        margin-right: 2.2rem !important;
+    }
+
+    // :host ::ng-deep .p-galleria-item-wrapper {
+    //     position: relative !important;
+    //     top: -4rem !important;
+    //     left: -8rem !important;
+    // }
+
+    // .kitchen-img
+    // {
+    //     display: none;
+    // }
+
+    .take-step
+    {
+        margin-top:2rem !important;
+    }
+
+    .transparent-menubar {
+        position: absolute !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px)
+{
+    .text-4xl
+    {
+        font-size: 2.5rem !important;
+    }
+
+    .p-carousel h2{
+        font-size: 20px !important;
+    }
+
+    .mx-20 {
+        margin-left: -1rem!important;
+        margin-right: -1rem!important;
+    }
+
+    .my-8 {
+        margin-top: 10rem!important;
+        margin-bottom: 5rem!important;
+    }
+
+    .text-5xl {
+        font-size: 1.1rem!important;
+    }
+
+    .font-medium
+    {
+        font-size: 2rem;
+    }
+
+    .text-sm {
+        font-size: 1.2rem!important;
+    }
+
+    .get-started
+    {
+        font-size: 1.9rem !important;
+    }
+
+    .p-button.p-button-rounded {
+        border-radius: 1rem;
+    }
+
+    .fa-solid
+    {
+        font-size: 3.5rem !important;
+    }
+
+    .room-label
+    {
+        font-size: 1.8rem;
+    }
+
+    .text-bold
+    {
+        font-size: 2.5rem;
+    }
+
+    .banner-button
+    {
+        font-size: 1.9rem;
+    }
+
+    .py-4 {
+        padding-top: 3.5rem!important;
+    }
+
+    .f-articles
+    {
+        font-size: 1.5rem;
+    }
+
+    .product-subheading
+    {
+        font-size: 2rem !important;
+    }
+
+    .enpower
+    {
+        font-size: 1.5rem !important;
+    }
+
+    .breaking-records
+    {
+        font-size: 2rem !important;
+    }
+
+    .transparent-menubar {
+        position: absolute !important;
+    }
+    
+}
+
+.transparent-menubar {
+    position: absolute !important;
+}
+
+.step-title 
+{
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    font-size: 1.6rem;
+}
+
+.step-subtitle
+{
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+    font-size: 1.2rem;
+}
+
+:host ::ng-deep .p-galleria-item-wrapper {
+    position: relative;
+    top: -8.4rem;
+}
+
+:host ::ng-deep .expand
+{
+    width: 100% !important;
+}
+
+
+  

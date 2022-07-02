@@ -115,5 +115,94 @@ p {
     padding-top: 1px;
 }
 
+@media screen and (min-width: 576px)
+{
+    .testing-banner
+    {
+        width: 100% !important;
+    }
+
+    // .modal-popup
+    // {
+    //     display: none !important;
+    // }
+}
+
+@media screen and (max-width: 576px)
+{
+    .testing-banner
+    {
+        width: 100% !important;
+    }
+
+    // .modal-image
+    // {
+    //     width: 100% !important;
+    //     height: 100% !important;
+    // }
+
+    .banner_text
+    {
+        margin-left: -6.6rem !important;
+    }
+
+    // .modal-popup
+    // {
+    //     display: none !important;
+    // }
+}
+
+@media screen and (max-width: 768px)
+{
+    .testing-banner
+    {
+        width: 100% !important;
+    }
+
+    // .modal-image
+    // {
+    //     width: 100% !important;
+    //     height: 100% !important;
+    // }
+
+    .banner_text
+    {
+        margin-left: -5.6rem !important;
+    }
+
+    .text-2xl {
+        font-size: 1.2rem!important;
+    }
+
+    .modal-image
+    {
+        width: 100% !important;
+    }
+
+    // .modal-popup
+    // {
+    //     display: none !important;
+    // }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .modal-image
+    {
+        width: 100% !important;
+        height: 90% !important; 
+    }
+
+    .testing-banner
+    {
+        width: 100% !important;
+    }
+}
+
+.transparent-menubar {
+    position: absolute !important;
+    z-index: 2 !important;
+}
+
 
 

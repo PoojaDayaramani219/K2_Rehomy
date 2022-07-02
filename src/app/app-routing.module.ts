@@ -46,11 +46,18 @@ import { RegisterComponent } from './pages/register.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AllFeaturedArticlesComponent } from './components/all-featured-articles/all-featured-articles.component';
 import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            
+
+            //   {
+            //     path: '',
+            //     component: GalleryComponent,
+            //     pathMatch: 'full'
+            // },
             {
                 path: '',
                 component: LandingPageComponent,
@@ -104,6 +111,7 @@ import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
             {path: 'forgot', component: ForgotPasswordComponent},
             {path: 'register', component: RegisterComponent},
             {path: 'all-featured-articles', component: AllFeaturedArticlesComponent},
+            {path:'gallery',component:GalleryComponent},
             {path: 'rehomy-tv', component: RehomyTvComponent},
             {path: 'testing', component: TestingComponent},
             {path: 'error', component: AppErrorComponent},
