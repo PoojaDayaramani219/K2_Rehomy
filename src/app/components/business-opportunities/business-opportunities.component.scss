@@ -1,0 +1,31 @@
+.transparent-menubar {
+    position: absolute !important;
+}
+
+@media screen and (max-width: 576px)
+{
+    .opportunity-heading
+    {
+        font-size: 1.8rem !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .business-icons
+    {
+        font-size: 1.7rem !important;
+    }
+
+    .opportunity-title
+    {
+        font-size: 1.2rem !important;
+    }
+
+    .icon-circle
+    {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+
+
+}

@@ -1,0 +1,11 @@
+.transparent-menubar {
+    position: absolute !important;
+}
+
+@media screen and (max-width: 768px)
+{
+    .get-in-touch
+    {
+        margin-top: 3rem !important;
+    }
+}

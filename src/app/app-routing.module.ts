@@ -47,7 +47,13 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { AllFeaturedArticlesComponent } from './components/all-featured-articles/all-featured-articles.component';
 import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { HomeRenovationsComponent } from './components/home-renovations/home-renovations.component';
 
+import { ExperienceComponent } from './components/experience/experience.component';
+import { WhyChoseUsComponent } from './components/why-chose-us/why-chose-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { BusinessOpportunitiesComponent } from './components/business-opportunities/business-opportunities.component';
+import { CareerOpportunitiesComponent } from './components/career-opportunities/career-opportunities.component';
 
 @NgModule({
     imports: [
@@ -111,9 +117,17 @@ import { GalleryComponent } from './components/gallery/gallery.component';
             {path: 'forgot', component: ForgotPasswordComponent},
             {path: 'register', component: RegisterComponent},
             {path: 'all-featured-articles', component: AllFeaturedArticlesComponent},
-            {path:'gallery',component:GalleryComponent},
+            {path:'gallery/:type',component:GalleryComponent},
             {path: 'rehomy-tv', component: RehomyTvComponent},
             {path: 'testing', component: TestingComponent},
+            {path: 'home-renovations-and-remodelling',component:HomeRenovationsComponent},
+
+            {path: 'rehomy-experience', component: ExperienceComponent},
+            {path: 'why-choose-us', component: WhyChoseUsComponent},
+            {path: 'contact-us',component:ContactUsComponent},
+            {path: 'business-opportunities', component: BusinessOpportunitiesComponent},
+            {path: 'career-opportunities', component: CareerOpportunitiesComponent},
+
             {path: 'error', component: AppErrorComponent},
             {path: 'access', component: AppAccessdeniedComponent},
             {path: 'notfound', component: AppNotfoundComponent},

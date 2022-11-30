@@ -17,6 +17,7 @@ export class LandingPageComponent implements OnInit {
   style_list: Array<any> = [];
   rehomy_video_library: Array<any> = [];
   responsiveOptions: Array<any> =[];
+  solutions:Array<any> = [];
   images: any;
   activeIndex: number = 0;
   items: { label: string; command: (event: any) => void; }[];
@@ -158,38 +159,38 @@ export class LandingPageComponent implements OnInit {
       "image": "homebar.png",
       "name": "home bar",
     },
-    {
-      "image": "corridor.png",
-      "name": "corridor",
-    },
-    {
-      "image": "utilityroom.png",
-      "name": "utility room",
-    },
-    {
-      "image": "staircase.png",
-      "name": "staircase",
-    },
+    // {
+    //   "image": "corridor.png",
+    //   "name": "corridor",
+    // },
+    // {
+    //   "image": "utilityroom.png",
+    //   "name": "utility room",
+    // },
+    // {
+    //   "image": "staircase.png",
+    //   "name": "staircase",
+    // },
   ];
   this.latest_stories = [
-    {
-      "image": "kitchen-dimension.png",
-      "name": "Top 10 Key Kitchen Dimensions You Need to Know",
-      "status": "popular"
-    },
+    // {
+    //   "image": "kitchen-dimension.png",
+    //   "name": "Top 10 Key Kitchen Dimensions You Need to Know",
+    //   "status": "popular"
+    // },
     {
       "image": "pooja-room.png",
       "name": "35 Serene Puja Room Designs",
       "status": "popular"
     },
     {
-      "image": "interior-design.png",
-      "name": "What Are the Benefits of Hiring an Interior Designer?",
+      "image": "dual-interior.png",
+      "name": "Turn One Room Into Two With These Genius Ideas",
       "status": "popular"
     },
     {
-      "image": "dual-interior.png",
-      "name": "Turn One Room Into Two With These Genius Ideas",
+      "image": "interior-design.png",
+      "name": "What Are the Benefits of Hiring an Interior Designer?",
       "status": "popular"
     },
     {
@@ -355,31 +356,59 @@ export class LandingPageComponent implements OnInit {
 
   ];
 
+  this.solutions=[
+    {
+      "icon":"fa-utensils",
+      "title": "Kitchen",
+      "subtitle":"The initial interior design consultation is when you meet with potential clients, learn more about their project needs and showcase your value as a home."
+    },
+    {
+      "icon":"fa-bed",
+      "title": "Bedroom",
+      "subtitle":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "icon":"fa-house-chimney-user",
+      "title": "Renovation",
+      "subtitle":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "icon":"fa-sink",
+      "title": "Plumbing",
+      "subtitle":"Fermentum et sollicitudin ac orci phasellus egestas tellusrutrum tellus."
+    },
+    {
+      "icon":"fa-paint-roller",
+      "title": "Painting",
+      "subtitle":"Nec tincidunt praesent semper feugiat. Sed adipiscing diamdonec adipiscing tristique risus nec feugiat."
+    },
+    {
+      "icon":"fa-hammer",
+      "title": "Construction",
+      "subtitle":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  ];
+
   this.images=[
       {
-          "icon":"fa-circle-1",
           "title": "Initial consultation",
-          "subtitle":"The initial interior design consultation is when you meet with potential clients, learn more about their project needs and showcase your value as a home."
+          "subtitle":"The initial interior design consultation is when you meet with potential clients, learn more about their project needs and showcase your value as a home.Begin considering the budget from the very moment you start thinking about building your house. "
       },
       {
-          "icon":"fa-circle-2",
           "title": "Concept & feasibility",
-          "subtitle":"Rehomy provide a full range of design expertise including early stage design work at project inception. Often required in a quick turnaround time."
+          "subtitle":"Rehomy provide a full range of design expertise including early stage design work at project inception. Often required in a quick turnaround time. It takes you through a series of tests that help you determine whether your project concept is viable. "
       },
       {
-          "icon":"fa-circle-3",
           "title": "Working drawings & costing",
-          "subtitle":"Working drawings provide dimensioned, graphical information that can be used; by a contractor to construct the works, or by suppliers to our clients."
+          "subtitle":"Working drawings provide dimensioned, graphical information that can be used; by a contractor to construct the works, or by suppliers to our clients. Based on the measurement, the building contractor will get only sufficient material to build the house and help the client save costs."
       },
       {
-          "icon":"fa-circle-4",
           "title": "Construction stage",
-          "subtitle":"The Process of Building a house · 1. The Base Stage · 2. The Frame Stage · 3. The Lock-up/Enclosed Stage · 4. The Fixing and Fit-Off Stages · 5. Practical Completion."
+          "subtitle":"The Process of Building a house · 1. The Base Stage · 2. The Frame Stage · 3. The Lock-up/Enclosed Stage · 4. The Fixing and Fit-Off Stages · 5. Practical Completion.Every successful building project starts with a sturdy foundation."
       },
       {
-          "icon":"fa-circle-5",
           "title": "Your finished home",
-          "subtitle":"It's worth taking your time to perfect the design and ensure the finished property will meet your needs.."
+          "subtitle":"It's worth taking your time to perfect the design and ensure the finished property will meet your needs. Little Touches That Will Make Your Home Look 'Finished'. "
       }
   ]
   }
@@ -418,6 +447,12 @@ export class LandingPageComponent implements OnInit {
 
   see_rehomy_library() {
     this.router.navigate(['rehomy-tv']);
+  }
+
+  roomType(type:any)
+  {
+      localStorage.setItem('room-type',type);
+      this.router.navigate(['gallery/' + type]); 
   }
 
 }

@@ -17,13 +17,14 @@
 }
 
 .featured-articles-subcaption {
-    position: absolute;
-    top: 5.13%;
-    width: 97.6%;
-    color: #fff;
-    z-index: 2;
-    min-height: 80px;
-    background-color: rgba(0, 0, 0, .5);
+    position: absolute !important;
+    top: 5.44% !important;
+    width: 96.8% !important;
+    color: #fff !important;
+    z-index: 2 !important;
+    left: 2rem !important;
+    min-height: 80px !important;
+    background-color: rgba(0, 0, 0, 0.5);
 }  
 
 .p-button-white {
@@ -52,3 +53,77 @@
     color: var(--green-500) !important;
     cursor: pointer;
 }
+
+.right-article-background
+{
+    background-color: #fff;
+}
+
+.transparent-menubar {
+    position: absolute !important;
+}
+
+
+@media screen and (max-width: 576px)
+{
+    .right-article 
+    {
+        padding-left: 0px !important;
+    }
+
+    .article-banner
+    {
+        display: none;
+    }
+
+    .article-content
+    {
+        padding-top: 1rem !important;
+        padding-left: 0px !important;
+    }
+
+    .comments-count
+    {
+        margin-top: -1.2rem !important;
+    }
+
+    .right-article-section
+    {
+        padding-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .featured-articles-subcaption
+    {
+        position: absolute;
+        top: 2.07% !important;
+        left: 2.4% !important;
+        width: 97.6% !important;
+    }
+
+    .right-article-section
+    {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .article-content
+    {
+        padding-left: 0px !important;
+        padding-top: 1rem !important;
+    }
+
+    .comments-count
+    {
+        margin-top: -1.2rem !important;
+    }
+
+    .article-image
+    {
+        padding-left: 0px !important;
+    }
+
+}
+

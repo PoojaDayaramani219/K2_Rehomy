@@ -98,6 +98,8 @@ import {AppMenuComponent} from './app.menu.component';
 import {AppMenuitemComponent} from './app.menuitem.component';
 import {AppTopBarComponent} from './app.topbar.component';
 import {AppSearchComponent} from './app.search.component';
+import {AppHeaderComponent} from './app.header.component';
+import {AppNavbarComponent} from './app.navbar.component';
 import {AppFooterComponent} from './app.footer.component';
 import {DashboardDemoComponent} from './demo/view/dashboarddemo.component';
 import {FormLayoutDemoComponent} from './demo/view/formlayoutdemo.component';
@@ -161,6 +163,12 @@ import { RehomyTvComponent } from './components/rehomy-tv/rehomy-tv.component';
 import { StyleClassModule } from 'primeng/styleclass';
 import { MessageService } from 'primeng/api';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { HomeRenovationsComponent } from './components/home-renovations/home-renovations.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { WhyChoseUsComponent } from './components/why-chose-us/why-chose-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { BusinessOpportunitiesComponent } from './components/business-opportunities/business-opportunities.component';
+import { CareerOpportunitiesComponent } from './components/career-opportunities/career-opportunities.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -270,6 +278,8 @@ FullCalendarModule.registerPlugins([
         AppConfigComponent,
         AppTopBarComponent,
         AppSearchComponent,
+        AppHeaderComponent,
+        AppNavbarComponent,
         AppFooterComponent,
         DashboardDemoComponent,
         FormLayoutDemoComponent,
@@ -317,7 +327,13 @@ FullCalendarModule.registerPlugins([
         LandingPageComponent,
         AllFeaturedArticlesComponent,
         RehomyTvComponent,
-        GalleryComponent
+        GalleryComponent,
+        HomeRenovationsComponent,
+        ExperienceComponent,
+        WhyChoseUsComponent,
+        ContactUsComponent,
+        BusinessOpportunitiesComponent,
+        CareerOpportunitiesComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

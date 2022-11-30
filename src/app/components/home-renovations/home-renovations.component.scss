@@ -1,0 +1,37 @@
+.transparent-menubar {
+    position: absolute !important;
+}
+
+.banner_text
+{
+    position: relative;
+    top: 8rem;
+}
+
+.shadow-1:hover{
+    box-shadow: 0 3px 5px #00000005, 0 0 2px #0000000d, 0 1px 4px orange !important;
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .home-spacing
+    {
+        padding: 1rem !important;
+    }
+
+    .home-images
+    {
+        position: relative;
+        left: -1rem;
+        top: -1rem;
+        height: 110% !important;
+        width: 110% !important;
+    }
+
+    .home-title
+    {
+        font-size: 1.4rem !important;
+    }
+}
+    

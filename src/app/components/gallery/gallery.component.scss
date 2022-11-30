@@ -6,5 +6,22 @@
 
 .pt-8
 {
-    padding-top: 8rem !important;
+    padding-top: 6rem !important;
+}
+
+.transparent-menubar {
+    position: absolute !important;
+}
+
+.limitTextHeight {
+    height: 40px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px)
+{
+    .filter-dropdown
+    {
+        padding-left: 0rem !important;
+    }
 }

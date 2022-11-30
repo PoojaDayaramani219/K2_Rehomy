@@ -16,3 +16,15 @@
     color: #2196f3;
     text-align: center;
 }
+
+.transparent-menubar {
+    position: absolute !important;
+}
+
+@media screen and (max-width: 576px)
+{
+    .rehomy-title
+    {
+        display:none;
+    }
+}

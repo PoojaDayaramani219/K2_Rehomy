@@ -1,0 +1,44 @@
+.transparent-menubar {
+    position: absolute !important;
+}
+
+.step-title-position
+{
+    position:relative;
+    top:-0.5rem;
+}
+
+.step-sub-title
+{
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 576px)
+{
+    .rehomy-experience-begin
+    {
+        padding-top: 2rem !important;
+    }
+    .experience-heading
+    {
+        padding-left: 1rem !important;
+    }
+
+    // .steps-position
+    // {
+    //     padding-left: 0px !important;
+    // }
+
+    // .steps-position-inner
+    // {
+    //     margin-left: 0px !important;
+    // }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .experience-heading
+    {
+        padding-left: 2rem !important;
+    }
+}

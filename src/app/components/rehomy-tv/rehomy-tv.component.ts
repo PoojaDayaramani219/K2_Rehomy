@@ -136,4 +136,10 @@ export class RehomyTvComponent implements OnInit {
     this.router.navigate(['register']);
   }
 
+  roomType(type:any)
+  {
+      localStorage.setItem('room-type',type);
+      this.router.navigate(['gallery/' + type]); 
+  }
+
 }

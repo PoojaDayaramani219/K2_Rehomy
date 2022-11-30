@@ -1,0 +1,183 @@
+<div class="surface-overlay transparent-menubar py-3 px-6 shadow-2 flex align-items-center justify-content-between">
+    <a pRipple class="cursor-pointer flex align-items-center lg:hidden text-700 mr-3 sm:mr-5" pStyleClass="#nav-1"
+        enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div class="flex align-items-center justify-content-center">
+        <img src="../../../assets/images/logo.png" alt="Image" class="lg:mr-5 h-2rem sm:h-3rem" [routerLink]="['/']">
+    </div>
+    <ul class="list-none p-0 m-0 flex flex-column lg:flex-row">
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>What We Do</span>
+                <i class="pi pi-angle-down ml-auto lg:ml-1 text-base"></i>
+            </a>
+            <div
+                class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute top-100 pl-8 pr-6 lg:px-4 py-0 lg:py-4">
+                <div class="flex flex-column lg:flex-row lg:justify-content-between">
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Clothing</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="mb-3 cursor-pointer hover:text-primary"
+                            [routerLink]="['/home-renovations-and-remodelling']">Home renovations and remodelling</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary" [routerLink]="['/rehomy-experience']">A
+                            better renovation experience</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary" [routerLink]="['/why-choose-us']">Why we're
+                            the best option</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>Products</span>
+                <i class="pi pi-angle-down ml-auto lg:ml-1 text-base"></i>
+            </a>
+            <div
+                class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 pl-8 pr-6 lg:px-6 py-0 lg:py-6">
+                <div class="flex flex-column lg:flex-row lg:justify-content-between">
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Clothing</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="font-semibold mb-5 text-xl text-900 hidden lg:block">Living</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Coffee & Side tables</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">ArmChairs</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Sofas</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Accessories & Decor</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary font-semibold"
+                            (click)="roomType('living room')">View All</li>
+                    </ul>
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Shoes</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="font-semibold mb-5 text-xl text-900 hidden lg:block">Bedroom</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Beds & Headboards</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bedside Tables</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Chests of Drawers</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Wardrobes</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary font-semibold" (click)="roomType('bedroom')">
+                            View All</li>
+                    </ul>
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Accessories</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="font-semibold mb-5 text-xl text-900 hidden lg:block">Kitchen</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Dtialng Chairs</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Dining Tables</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bar Stoots</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Kitchen & Dining Furniture</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary font-semibold" (click)="roomType('kitchen')">
+                            View All</li>
+                    </ul>
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Jewelry</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="font-semibold mb-5 text-xl text-900 hidden lg:block">Bathroom</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bathroom Cabinets</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bathroom Accessories</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bathroom Vanity Units</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bathroom Mirrors</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary font-semibold" (click)="roomType('bathroom')">
+                            View All</li>
+                    </ul>
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Brands</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="font-semibold mb-5 text-xl text-900 hidden lg:block">Furniture</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Living Room</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Kitchen & Dining</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bedroom</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary">Bathroom</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary font-semibold">View All</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>Testimonials</span>
+            </a>
+        </li>
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>Locations</span>
+            </a>
+        </li>
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>People</span>
+            </a>
+        </li>
+
+        <li class="flex flex-column lg:flex-row">
+            <a pRipple
+                class="inline-flex align-items-center cursor-pointer border-right-2 lg:border-right-none lg:border-bottom-2 border-transparent 
+                    hover:text-primary py-3 lg:py-0 px-6 lg:px-2 text-700 select-none text-xl lg:text-base font-medium lg:font-base w-full lg:w-auto"
+                pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                <span>Get In Touch</span>
+                <i class="pi pi-angle-down ml-auto lg:ml-1 text-base"></i>
+            </a>
+            <div
+                class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute top-100 pl-8 pr-6 lg:px-4 py-0 lg:py-4">
+                <div class="flex flex-column lg:flex-row lg:justify-content-between">
+                    <a pStyleClass="@next" enterClass="hidden" leaveToClass="hidden"
+                        class="font-medium text-700 text-lg cursor-pointer block lg:hidden mb-3 select-none">Clothing</a>
+                    <ul class="list-none py-0 pr-0 lg:pl-0 pl-5 m-0 text-700 hidden lg:block">
+                        <li class="mb-3 cursor-pointer hover:text-primary" [routerLink]="['/contact-us']">Rehomy Enquiry
+                        </li>
+                        <li class="mb-3 cursor-pointer hover:text-primary" [routerLink]="['/business-opportunities']">
+                            Business opportunities</li>
+                        <li class="mb-3 cursor-pointer hover:text-primary" [routerLink]="['/career-opportunities']">
+                            Career Opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="flex ml-auto">
+        <ul class="list-none p-0 m-0 flex">
+            <li class="flex">
+                <a pRipple
+                    class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-2 text-700 hover:text-primary">
+                    <i class="pi pi-search mr-2 lg:mr-2 text-xl sm:text-base"></i>
+                    <span class="hidden lg:inline">Search</span>
+                </a>
+            </li>
+            <li class="flex">
+                <a pRipple
+                    class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-2 text-700 hover:text-primary">
+                    <i class="pi pi-heart mr-2 lg:mr-2 text-xl sm:text-base"></i>
+                    <span class="hidden lg:inline">Favorites</span>
+                </a>
+            </li>
+            <li class="flex">
+                <a pRipple
+                    class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-2 text-700 hover:text-primary">
+                    <i class="pi pi-shopping-cart lg:mr-2 text-xl sm:text-base" pBadge></i>
+                    <span class="hidden lg:inline">Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

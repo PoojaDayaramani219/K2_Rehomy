@@ -109,8 +109,12 @@ df-messenger {
         margin-right: -2rem!important;
     }
 
-    .text-5xl {
-        font-size: 1.3rem !important;
+    // .text-5xl {
+    //     font-size: 1.3rem !important;
+    // }
+    .banner-head1 .banner-head2
+    {
+        font-size: 1.4rem !important;
     }
 
     .banner-img {
@@ -145,9 +149,24 @@ df-messenger {
         font-size: 5rem !important;
     }
 
-    .font-medium
+    // .font-medium
+    // {
+    //     font-size: 2rem !important;
+    // }
+
+    .solution-title
     {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .room-label
+    {
+        font-size: 1.4rem !important;
+    }
+
+    .f-articles
+    {
+        font-size: 0.9rem !important;
     }
 
     .get-started
@@ -200,7 +219,19 @@ df-messenger {
     //     left: -8rem !important;
     // }
 
-    .kitchen-img
+    .step-section
+    {
+        display: none !important;
+    }
+
+    .right-step
+    {
+        padding-top: 25% !important;
+        padding-left: -9%;
+        text-align: left;
+    }
+
+    .left-step
     {
         display: none !important;
     }
@@ -227,7 +258,12 @@ df-messenger {
         width: 100% !important;
     }
 
-    .text-5xl {
+    // .text-5xl {
+    //     font-size: 1.1rem !important;
+    // }
+
+    .banner-head1 .banner-head2
+    {
         font-size: 1.1rem !important;
     }
 
@@ -273,13 +309,19 @@ df-messenger {
         margin-right: 2.2rem !important;
     }
 
-    // :host ::ng-deep .p-galleria-item-wrapper {
-    //     position: relative !important;
-    //     top: -4rem !important;
-    //     left: -8rem !important;
-    // }
+    .kitchen-img .step-section
+    {
+        display: none !important;
+    }
 
-    .kitchen-img
+    .right-step
+    {
+        padding-top: 25% !important;
+        padding-left: -9%;
+        text-align: left;
+    }
+
+    .left-step
     {
         display: none !important;
     }
@@ -349,17 +391,11 @@ df-messenger {
     :host ::ng-deep .p-galleria.p-galleria-indicators-bottom .p-galleria-indicator {
         margin-right: 2.2rem !important;
     }
-
-    // :host ::ng-deep .p-galleria-item-wrapper {
-    //     position: relative !important;
-    //     top: -4rem !important;
-    //     left: -8rem !important;
-    // }
-
-    // .kitchen-img
-    // {
-    //     display: none;
-    // }
+    
+    .step-section
+    {
+        display: none !important;
+    }
 
     .take-step
     {
@@ -393,8 +429,12 @@ df-messenger {
         margin-bottom: 5rem!important;
     }
 
-    .text-5xl {
-        font-size: 1.1rem!important;
+    // .text-5xl {
+    //     font-size: 1.1rem!important;
+    // }
+    .banner-head1 .banner-head2
+    {
+        font-size: 1.4rem !important;
     }
 
     .font-medium
@@ -483,6 +523,7 @@ df-messenger {
     top: 7rem;
     left: 1rem;
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 :host ::ng-deep .p-galleria-item-wrapper {
@@ -493,6 +534,43 @@ df-messenger {
 :host ::ng-deep .expand
 {
     width: 100% !important;
+}
+
+.right-step
+{
+    padding-left: 10%;
+    text-align: left;
+}
+
+.browse-room-item-content:hover
+{
+    box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+.latest-design-item-content:hover 
+{
+    box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+.browse-by-style-content:hover
+{
+    box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+.rehomy-library-item-content:hover
+{
+    box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+
+.browse-room-item 
+{
+    cursor: pointer !important;
+}
+
+.breaking-records:hover
+{
+    box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12) !important;
 }
 
 
